@@ -1,0 +1,26 @@
+{
+  "version": "0.0.1",
+  "name": "eslintrc",
+  "main": "index.js",
+  "description": "Importable dotfiles for reuse in projects",
+  "author": {
+    "name": "Jesse Lamb",
+    "email": "jesse@okeydoke.net"
+  },
+  "license": "ISC",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/okeydoke/dotfiles.git"
+  },
+  "scripts": {
+    "postinstall": "node index.js"
+    },
+  "dependencies": {
+ 
+  },
+  "keywords": [
+    "eslint",
+    "eslintrc"
+  ]
+}

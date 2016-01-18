@@ -1,0 +1,22 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "rules": {
+    "strict": 1,
+    "no-dupe-keys": 2,
+    "no-invalid-regexp": 2,
+    "no-irregular-whitespace": 2,
+    "no-labels": 0,
+    "no-obj-calls": 2,
+    "no-unreachable": 2,
+    "valid-typeof": 2,
+    "semi": [ 2, "always" ],
+    "quotes": [2, "single", "avoid-escape"],
+    "no-underscore-dangle": 0,
+    "camelcase": 0,
+    "no-use-before-define": [2, "nofunc"]
+  }
+}
