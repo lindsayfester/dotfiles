@@ -13,13 +13,7 @@ function copyFile(source, target) {
 	});
 }
 
-fs.readdir(__dirname, function(err, files){
-	if( err ) {
-		throw err;
-	}
-
-	// move any .file to the n
-	files.filter( file => file.charAt(0) === '.' )
-	     .forEach( file => { fs.writeFileSync(path.resolve( __dirname, '../..', file), fs.readFileSync(file)); });
-
+['.editorconfig', '.eslint', '.gitignore'].forEach( function( file) {
+	// copy the files two directory's up, assuming a folder structure of node_modules/dotfiles/
+	fs.writeFileSync(path.resolve( __dirname, '../..', file), fs.readFileSync(file));
 });
