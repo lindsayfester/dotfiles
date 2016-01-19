@@ -13,7 +13,6 @@
 #IDEs
 .idea
 
-
 # OS or Editor folders
 .cache
 Desktop.ini
@@ -44,3 +43,10 @@ coverage
 test/ui/*.png
 test/ui/*.css
 test/ui/test.bundle.js
+
+#these files are ignored since they're part of this repo
+.editorconfig
+.eslintrc
+.gitattributes
+.gitignore
+browserslist

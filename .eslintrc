@@ -4,6 +4,13 @@
     "node": true,
     "es6": true
   },
+  "globals":{
+    "React": true
+  },
+  "ecmaFeatures": {
+    "modules": true,
+    "jsx": true
+  },
   "rules": {
     "strict": 0,
     "no-dupe-keys": 2,
