@@ -19,6 +19,6 @@ fs.readdir(__dirname, function(err, files){
 	}
 
 	files.filter( file => file.charAt(0) === '.' )
-	     .forEach( file => { console.log(file;) /* fs.writeFileSync(path.resolve('..', file), fs.readFileSync(file)); */});
+	     .forEach( file => { fs.writeFileSync(path.resolve('..', file), fs.readFileSync(file)); });
 
 });
