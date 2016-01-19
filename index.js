@@ -10,7 +10,7 @@ function copy( source, dest ) {
 	);
 }
 
-['.editorconfig', '.eslintrc', 'browserslist'].forEach( function( file) {
+['.editorconfig', '.eslintrc', '.gitattributes', 'browserslist'].forEach( function( file) {
 	copy(file);
 });
 
