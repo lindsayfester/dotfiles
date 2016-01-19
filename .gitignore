@@ -12,7 +12,8 @@
 
 # OS or Editor folders
 .cache
-.css
+Desktop.ini
+$RECYCLE.BIN/
 .DS_Store
 .project
 .settings
