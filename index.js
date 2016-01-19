@@ -16,4 +16,4 @@ function copy( source, dest ) {
 
 // So that this repo doesn't ignore files removed the . from .gitignore,
 // when copying it put it back
-copy('.gitignore', '.gitignore');
+copy('gitignore', '.gitignore');
