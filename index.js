@@ -18,9 +18,8 @@ fs.readdir(__dirname, function(err, files){
 		throw err;
 	}
 
+	// move any .file to the n
 	files.filter( file => file.charAt(0) === '.' )
-	     .forEach( file => { fs.writeFileSync(path.resolve('..', file), fs.readFileSync(file)); });
-
-console.log( process.env );
+	     .forEach( file => { fs.writeFileSync(path.resolve( __dirname, '../..', file), fs.readFileSync(file)); });
 
 });
