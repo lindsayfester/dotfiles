@@ -1,22 +1,16 @@
 var fs = require('fs');
 var path = require('path');
 
-function copyFile(source, target) {
-	return new Promise(function(resolve, reject) {
-		var rd = fs.createReadStream(source);
-		rd.on('error', reject);
-
-		var wr = fs.createWriteStream(target);
-		wr.on('error', reject);
-		wr.on('finish', resolve);
-		rd.pipe(wr);
-	});
+// copies a file (`source`) two directory's up as `dest` (optionally `dest` can be omitted)
+// two directory's assumes a folder structure of node_modules/dotfiles/ with this
+// being run as part of npm install from the projects root
+function copy( source, dest ) {
+	fs.writeFileSync(path.resolve( __dirname, '../..', dest || source), fs.readFileSync( source ));
 }
 
-['.editorconfig', '.eslintrc'].forEach( function( file) {
-	// copy the files two directory's up, assuming a folder structure of node_modules/dotfiles/
-	fs.writeFileSync(path.resolve( __dirname, '../..', file), fs.readFileSync(file));
+['.editorconfig', '.eslintrc', 'browserlist'].forEach( function( file) {
+	copy(file);
 });
 
 // npm renames .gitignore to .npmignore so this is a special case
-fs.writeFileSync(path.resolve( __dirname, '../..', '.gitignore'), fs.readFileSync('.npmignore'));
+copy('.gitignore', '.npmignore');

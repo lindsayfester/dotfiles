@@ -10,17 +10,25 @@
 *.vi
 *~
 
+#IDEs
+.idea
+
+
 # OS or Editor folders
 .cache
 Desktop.ini
 $RECYCLE.BIN/
 .DS_Store
+.DS_Store?
 .project
 .settings
 .tmproj
 nbproject
 npm-debug.log
 Thumbs.db
+._*
+.Spotlight-V100
+.Trashes
 
 # Folders to ignore
 .tmp
@@ -28,4 +36,11 @@ dist
 node_modules
 bower_components
 jspm_packages
-adddasd
+
+#Unit test coverage
+coverage
+
+#UI Testing
+test/ui/*.png
+test/ui/*.css
+test/ui/test.bundle.js
