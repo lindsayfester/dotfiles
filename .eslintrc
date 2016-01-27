@@ -12,6 +12,8 @@
     "jsx": true
   },
   "rules": {
+    "brace-style": [ 2, "1tbs", { "allowSingleLine": true } ],
+    "eol-last": 0,
     "strict": 0,
     "no-dupe-keys": 2,
     "no-invalid-regexp": 2,
@@ -19,6 +21,10 @@
     "no-labels": 0,
     "no-obj-calls": 2,
     "no-unreachable": 2,
+    "no-shadow": 0,
+    "no-trailing-spaces": 0,
+    "no-unused-vars": [ 2, { "vars": "all", "args": "none" } ],
+    "no-mixed-spaces-and-tabs": [ 2, "smart-tabs" ],
     "valid-typeof": 2,
     "semi": [ 2, "always" ],
     "quotes": [2, "single", "avoid-escape"],
