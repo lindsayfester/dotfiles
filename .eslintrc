@@ -11,6 +11,9 @@
     "modules": true,
     "jsx": true
   },
+  "plugins": [
+    "react"
+  ],
   "rules": {
     "brace-style": [ 2, "1tbs", { "allowSingleLine": true } ],
     "eol-last": 0,
