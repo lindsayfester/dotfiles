@@ -1,0 +1,4 @@
+{
+  // needed for test-coverage
+  "stage": 0 // required for decorators among other things
+}
