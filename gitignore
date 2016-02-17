@@ -45,8 +45,9 @@ test/ui/*.css
 test/ui/test.bundle.js
 
 #these files are ignored since they're part of this repo
+.babelrc
+browserlist
 .editorconfig
 .eslintrc
 .gitattributes
 .gitignore
-browserslist
