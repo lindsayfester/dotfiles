@@ -46,7 +46,7 @@ test/ui/test.bundle.js
 
 #these files are ignored since they're part of this repo
 .babelrc
-browserlist
+browserslist
 .editorconfig
 .eslintrc
 .gitattributes
