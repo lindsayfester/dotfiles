@@ -1,6 +1,5 @@
 var fs = require('fs-extra');
-var path = require('path');
-var resolve = path.resolve;
+var resolve = require('path').resolve;
 
 // copies values from files array two directory's up, which assumes folder 
 // structure of node_modules/dotfiles/ with this being run as part of npm 
