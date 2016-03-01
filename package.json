@@ -15,9 +15,9 @@
   },
   "scripts": {
     "postinstall": "node index.js"
-    },
+  },
   "dependencies": {
- 
+    "fs-extra": "^0.26.5"
   },
   "keywords": [
     "eslint",
