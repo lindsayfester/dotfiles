@@ -17,7 +17,7 @@
     "postinstall": "node index.js"
   },
   "dependencies": {
-    "fs-extra": "^0.26.5"
+    "fs-jetpack": "^0.7.1"
   },
   "keywords": [
     "eslint",
