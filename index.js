@@ -15,11 +15,14 @@ var files = [
 ];
 
 var basePath = resolve( __dirname, '../..');
+var copyOptions = {
+	clobber: false
+};
 
 files.forEach( function( file ) {
-	fse.copySync( file, resolve( basePath, file) );
+	fse.copySync( file, resolve( basePath, file), copyOptions );
 });
 
 // So that this repo doesn't ignore files, removed the . from .gitignore,
 // when copying it put it back
-fse.copySync('gitignore', resolve( basePath, '.gitignore' ) );
+fse.copySync('gitignore', resolve( basePath, '.gitignore' ), copyOptions );
