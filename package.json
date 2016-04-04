@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1",
+  "version": "0.1.0",
   "name": "dotfiles",
   "main": "index.js",
   "description": "Importable dotfiles for reuse in projects",
@@ -17,7 +17,7 @@
     "postinstall": "node index.js"
   },
   "dependencies": {
-    "fs-jetpack": "^0.7.1"
+    "fs-extra": "^0.26.7"
   },
   "keywords": [
     "eslint",

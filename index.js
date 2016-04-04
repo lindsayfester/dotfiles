@@ -1,4 +1,4 @@
-var fs = require('fs-jetpack');
+var fse = require('fs-extra');
 var resolve = require('path').resolve;
 
 // copies values from files array two directory's up, which assumes folder 
@@ -17,10 +17,9 @@ var files = [
 var basePath = resolve( __dirname, '../..');
 
 files.forEach( function( file ) {
-	console.log( resolve( basePath, file) );
-	fs.copy( file, resolve( basePath, file) );
+	fse.copysync( file, resolve( basePath, file) );
 });
 
 // So that this repo doesn't ignore files, removed the . from .gitignore,
 // when copying it put it back
-fs.copy('gitignore', resolve( basePath, '.gitignore' ) );
+fse.copysync('gitignore', resolve( basePath, '.gitignore' ) );
