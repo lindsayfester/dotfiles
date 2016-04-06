@@ -17,10 +17,13 @@
     "postinstall": "node index.js"
   },
   "dependencies": {
-    "fs-sync": "^1.0.2"
+    "copy-no-overwrite": "git://github.com/okeydoke/copy-no-overwrite.git#master"
   },
   "keywords": [
+    "babelrc",
     "eslint",
-    "eslintrc"
+    "eslintrc",
+    "bowserlist",
+    "editorconfig"
   ]
 }
